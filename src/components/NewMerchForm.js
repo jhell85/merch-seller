@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 
 function NewMerchForm(props) {
   function handleNewMerchFormSubmission(event){
-  event.preventDefault(event.target.item.value);
-  props.onNewMerchCreation({item: event.target.item.value, description: event.target.description.value, quantity: event.target.quantity.value, id: v4()});
+    event.preventDefault(event.target.item.value);
+    props.onNewMerchCreation({item: event.target.item.value, description: event.target.description.value, quantity: event.target.quantity.value, id: v4()});
   }
   return (
     <React.Fragment>
